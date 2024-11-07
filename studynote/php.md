@@ -1,7 +1,3 @@
----
-description: PHP web exploitation
----
-
 # PHP
 
 PHP stands for Hypertext Preprocessor. Being a scripting language like Python, PHP does not require compilation. It offers server-side scripting which allowed to creating dynamic web contents.&#x20;
